@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>History — LeadGen AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col">
+    <nav class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-10">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="{{ url_for('dashboard') }}" class="text-xl font-bold tracking-tight">
+                Lead<span class="text-indigo-500">Gen</span> AI
+            </a>
+            <div class="flex items-center gap-3 text-sm">
+                <a href="{{ url_for('dashboard') }}"
+                    class="px-3 py-1.5 border border-slate-700 hover:border-indigo-500 text-slate-300 hover:text-white rounded-md transition">
+                    New search
+                </a>
+                <a href="{{ url_for('logout') }}"
+                    class="px-3 py-1.5 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white rounded-md transition">
+                    Sign out
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-1 max-w-5xl w-full mx-auto px-6 py-10">
+        <header class="mb-8 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+            <div>
+                <h2 class="text-3xl font-bold tracking-tight">Search history</h2>
+                <p class="text-slate-400 mt-2">
+                    {{ searches|length }} search{{ 'es' if searches|length != 1 else '' }} ·
+                    {{ total_leads }} lead{{ 's' if total_leads != 1 else '' }} stored
+                </p>
+            </div>
+            {% if searches %}
+                <a href="{{ url_for('download_all_history') }}"
+                    class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 text-white font-medium px-5 py-2.5 rounded-md transition shadow-lg shadow-indigo-900/30 whitespace-nowrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/>
+                    </svg>
+                    Download All History (.xlsx)
+                </a>
+            {% endif %}
+        </header>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="mb-6 px-4 py-3 rounded-md text-sm border
+                        {% if category == 'error' %}bg-red-950/50 border-red-900 text-red-200
+                        {% else %}bg-emerald-950/50 border-emerald-900 text-emerald-200{% endif %}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        {% if searches %}
+            <ul class="space-y-4">
+                {% for s in searches %}
+                    <li class="bg-slate-900 border border-slate-800 rounded-xl p-5 shadow hover:border-slate-700 transition">
+                        <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
+                            <div class="min-w-0 flex-1">
+                                <div class="flex items-center gap-3 flex-wrap">
+                                    <span class="text-xs text-slate-500">#{{ s.id }}</span>
+                                    <span class="text-xs text-slate-500">{{ s.created_at.strftime('%b %d, %Y · %H:%M UTC') }}</span>
+                                    <span class="inline-block px-2 py-0.5 text-xs bg-indigo-950/60 border border-indigo-900/60 text-indigo-200 rounded">
+                                        {{ s.lead_count }} leads
+                                    </span>
+                                </div>
+                                <div class="mt-2 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
+                                    <div>
+                                        <div class="text-xs uppercase tracking-wider text-slate-500">Offering</div>
+                                        <div class="text-slate-200 truncate" title="{{ s.offering }}">{{ s.offering }}</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs uppercase tracking-wider text-slate-500">Target client</div>
+                                        <div class="text-slate-200 truncate" title="{{ s.target_client }}">{{ s.target_client }}</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs uppercase tracking-wider text-slate-500">Region</div>
+                                        <div class="text-slate-200 truncate" title="{{ s.region }}">{{ s.region }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2 shrink-0">
+                                <a href="{{ url_for('results', search_id=s.id) }}"
+                                    class="px-3 py-1.5 text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-md transition">
+                                    View
+                                </a>
+                                <a href="{{ url_for('download', search_id=s.id) }}"
+                                    class="px-3 py-1.5 text-xs bg-indigo-600 hover:bg-indigo-500 text-white rounded-md transition">
+                                    Download
+                                </a>
+                                <form method="POST" action="{{ url_for('delete_search', search_id=s.id) }}"
+                                    onsubmit="return confirm('Delete this search and its {{ s.lead_count }} leads? This cannot be undone.');"
+                                    class="inline">
+                                    <button type="submit"
+                                        class="px-3 py-1.5 text-xs border border-red-900 text-red-300 hover:bg-red-950/40 rounded-md transition">
+                                        Delete
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-12 text-center">
+                <h3 class="text-lg font-semibold text-slate-200">No searches yet</h3>
+                <p class="text-slate-400 mt-2 text-sm">Your generated lead batches will appear here for re-download.</p>
+                <a href="{{ url_for('dashboard') }}"
+                    class="inline-block mt-6 bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-5 py-2.5 rounded-md transition">
+                    Run your first search
+                </a>
+            </div>
+        {% endif %}
+    </main>
+
+    <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-600">
+        © LeadGen AI — Grounded with Gemini 2.5 Flash + Google Search
+    </footer>
+</body>
+</html>

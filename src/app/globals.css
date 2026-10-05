@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+/**
+ * LeadGen design tokens.
+ *
+ * Direction: editorial, not dashboard-by-numbers. Warm paper ground, high-contrast
+ * ink, one decisive accent reserved for the score — the number that decides whether
+ * a lead earns a phone call. Semantic colours are used only semantically.
+ *
+ * Light theme only, by design: this is a daylight working tool.
+ */
+
+@theme {
+  /* Ground and ink */
+  --color-paper: oklch(98.6% 0.004 85);
+  --color-paper-raised: oklch(100% 0 0);
+  --color-paper-sunk: oklch(96.4% 0.005 85);
+  --color-ink: oklch(21% 0.012 265);
+  --color-ink-muted: oklch(48% 0.011 265);
+  --color-ink-faint: oklch(66% 0.009 265);
+  --color-rule: oklch(91% 0.005 265);
+  --color-rule-strong: oklch(84% 0.007 265);
+
+  /* Accent — the score, and only the score */
+  --color-accent: oklch(58% 0.19 35);
+  --color-accent-soft: oklch(94.5% 0.035 45);
+  --color-accent-ink: oklch(42% 0.15 35);
+
+  /* Semantic — pipeline states and signals */
+  --color-signal-hot: oklch(58% 0.19 35);
+  --color-signal-warm: oklch(72% 0.14 75);
+  --color-signal-cool: oklch(56% 0.1 240);
+  --color-signal-good: oklch(55% 0.13 155);
+  --color-signal-dead: oklch(62% 0.02 265);
+
+  /* Type */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-instrument), Georgia, serif;
+
+  --text-micro: 0.6875rem;
+  --text-data: clamp(1.75rem, 1.2rem + 1.6vw, 2.75rem);
+  --text-hero: clamp(2rem, 1.4rem + 2.2vw, 3.25rem);
+
+  /* Motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    /* Numbers must align in columns across the whole app. */
+    font-variant-numeric: tabular-nums;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Headings carry the editorial voice; UI chrome stays in the sans. */
+  .font-display {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.015em;
+  }
+
+  ::selection {
+    background: var(--color-accent-soft);
+    color: var(--color-accent-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+@layer utilities {
+  /* Small-caps label used above every data group. */
+  .label-micro {
+    font-size: var(--text-micro);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ink-faint);
+  }
+
+  /* Faint paper grain — keeps large empty areas from reading as flat white. */
+  .surface-grain {
+    background-image: radial-gradient(
+      oklch(0% 0 0 / 0.018) 1px,
+      transparent 1px
+    );
+    background-size: 4px 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

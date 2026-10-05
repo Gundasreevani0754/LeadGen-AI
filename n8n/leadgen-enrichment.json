@@ -1,0 +1,79 @@
+{
+  "name": "LeadGen — enrichment",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            { "field": "cronExpression", "expression": "0 2 * * *" }
+          ]
+        }
+      },
+      "id": "trigger-nightly",
+      "name": "Every night at 02:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [-320, 0]
+    },
+    {
+      "parameters": {
+        "command": "=npm run enrich -- --limit 40"
+      },
+      "id": "run-enrichment",
+      "name": "Crawl + extract + RDAP",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [-80, 0],
+      "notes": "Runs the worker in the project directory. Set the workflow's working directory to the repo root, or prefix with `cd <repo> &&`. The worker honours the 90-day TTL, so re-runs cost nothing on fresh rows."
+    },
+    {
+      "parameters": {
+        "command": "=npm run score"
+      },
+      "id": "run-scoring",
+      "name": "Re-score everything",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [160, 0],
+      "notes": "Pure computation. No network, no quota — always safe to re-run."
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            { "field": "cronExpression", "expression": "0 9 * * 1" }
+          ]
+        }
+      },
+      "id": "trigger-weekly-ping",
+      "name": "Weekly keepalive",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [-320, 220]
+    },
+    {
+      "parameters": {
+        "command": "=npm run score -- --only-unscored"
+      },
+      "id": "keepalive",
+      "name": "Touch Supabase",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [-80, 220],
+      "notes": "Supabase free projects pause after 7 idle days (spec §18). This query is the backstop."
+    }
+  ],
+  "connections": {
+    "Every night at 02:00": {
+      "main": [[{ "node": "Crawl + extract + RDAP", "type": "main", "index": 0 }]]
+    },
+    "Crawl + extract + RDAP": {
+      "main": [[{ "node": "Re-score everything", "type": "main", "index": 0 }]]
+    },
+    "Weekly keepalive": {
+      "main": [[{ "node": "Touch Supabase", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": { "executionOrder": "v1" },
+  "pinData": {}
+}

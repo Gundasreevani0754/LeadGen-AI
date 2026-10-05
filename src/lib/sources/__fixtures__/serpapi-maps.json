@@ -1,0 +1,897 @@
+{
+  "search_metadata": {
+    "id": "6aad7de8fdfbab208b31d34b",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/pXYzxg4_PHHawl_6zMgXOg256S5KZChelTOHIzAXo8E/6aad7de8fdfbab208b31d34b.json",
+    "markdown_endpoint": "https://serpapi.com/searches/pXYzxg4_PHHawl_6zMgXOg256S5KZChelTOHIzAXo8E/6aad7de8fdfbab208b31d34b.md",
+    "created_at": "2026-09-18 18:07:36 UTC",
+    "processed_at": "2026-09-18 18:07:36 UTC",
+    "google_maps_url": "https://www.google.com/maps/search/dental+clinic+in+Warangal//data=!3m1!4b1!4m2!2m1!6e5?hl=en",
+    "raw_html_file": "https://serpapi.com/searches/pXYzxg4_PHHawl_6zMgXOg256S5KZChelTOHIzAXo8E/6aad7de8fdfbab208b31d34b.html",
+    "prettify_html_file": "https://serpapi.com/searches/pXYzxg4_PHHawl_6zMgXOg256S5KZChelTOHIzAXo8E/6aad7de8fdfbab208b31d34b.prettify",
+    "total_time_taken": 1.5
+  },
+  "search_parameters": {
+    "engine": "google_maps",
+    "type": "search",
+    "q": "dental clinic in Warangal",
+    "google_domain": "google.com",
+    "hl": "en"
+  },
+  "search_information": {
+    "local_results_state": "Results for exact spelling",
+    "query_displayed": "dental clinic in Warangal"
+  },
+  "local_results": [
+    {
+      "position": 1,
+      "title": "Kalpana Care32 Dental Clinic",
+      "place_id": "ChIJTyJeOQNFMzoRTznXOvQ-aO8",
+      "data_id": "0x3a334503395e224f:0xef683ef43ad7394f",
+      "data_cid": "17251107591322810703",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a334503395e224f%3A0xef683ef43ad7394f&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a334503395e224f%3A0xef683ef43ad7394f&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 17.9816041,
+        "longitude": 79.5988967
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJTyJeOQNFMzoRTznXOvQ-aO8",
+      "provider_id": "/g/11fm4w1k8y",
+      "rating": 4.9,
+      "reviews": 182,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic"
+      ],
+      "address": "Jayaprakash Narayan Road, near Satya Hospital Street, opposite vishwakarma veedhi (Street, Girmajipet, Warangal, Telangana 506002, India",
+      "country": "India",
+      "open_state": "Closed · Opens 10 AM Sat",
+      "hours": "Closed · Opens 10 AM Sat",
+      "operating_hours": {
+        "friday": "10 AM–9 PM",
+        "saturday": "10 AM–9 PM",
+        "sunday": "10 AM–6 PM",
+        "monday": "10 AM–9 PM",
+        "tuesday": "10 AM–9 PM",
+        "wednesday": "10 AM–9 PM",
+        "thursday": "10 AM–9 PM"
+      },
+      "phone": "+91 83286 79049",
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlvEJYhmuTc6GQJL6epFWb6OZL-oa3OIzXcVeVi5FYngYlU42ood1Etg5HSRsSGWMIom5DCFnCvxRkRfTiYY9tSXlhiuk87q0DI-j20yw6cWDjRN-Xs1MG3UIaQBlLyO-Jz4tKx=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/vlDtTXicHcRLcoIwAADQE0WCfLSd6aIVQRBLDSikO5vGBAwJmiDoBXuG3sYZ3-L9_3FjOv1qWYI7E6YUE7TX9EKUNFSaCVGtxToNiAbael-hr6IU12WCedsXxI-2SerTLix__Ow7BergZPG9Inu6r70QS4bFzp0q9WsvDfNWOdJ5VG5i1XrBIpSL64hO6FjUGL-YvBK87k_z2RkGMWim8Db4pAwa9AkqbW8iZxcfth8ivWUgubtmPb4NNoQQ8OcEyAdD9kQH"
+    },
+    {
+      "position": 2,
+      "title": "Partha Dental Clinic | Best Dental Clinic in Warangal",
+      "place_id": "ChIJ3-BOqBhFMzoRTRm5Zo6ILAs",
+      "data_id": "0x3a334518a84ee0df:0xb2c888e66b9194d",
+      "data_cid": "805168578582616397",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a334518a84ee0df%3A0xb2c888e66b9194d&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a334518a84ee0df%3A0xb2c888e66b9194d&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 17.9809996,
+        "longitude": 79.5991131
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJ3-BOqBhFMzoRTRm5Zo6ILAs",
+      "provider_id": "/g/11hd9n_tys",
+      "rating": 4.8,
+      "reviews": 357,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic",
+        "Cosmetic dentist",
+        "Dental implants periodontist",
+        "Dental implants provider",
+        "Hair transplantation clinic",
+        "Pediatric dentist",
+        "Teeth whitening service"
+      ],
+      "address": "Warangal Central, above ICICI Bank, beside SBI Zonal Office, Nandayya Gari Compound, Girmajipet, Warangal, Telangana 506002, India",
+      "country": "India",
+      "open_state": "Closed · Opens 10 AM Sat",
+      "hours": "Closed · Opens 10 AM Sat",
+      "operating_hours": {
+        "friday": "10 AM–9 PM",
+        "saturday": "10 AM–9 PM",
+        "sunday": "10 AM–9 PM",
+        "monday": "10 AM–9 PM",
+        "tuesday": "10 AM–9 PM",
+        "wednesday": "10 AM–9 PM",
+        "thursday": "10 AM–9 PM"
+      },
+      "phone": "+91 72070 41441",
+      "website": "https://parthadental.com/dental-skin-hair-clinic-warangal/?utm_source=google&utm_medium=gmb&utm_campaign=warangal",
+      "extensions": [
+        {
+          "accessibility": [
+            "Wheelchair accessible restroom"
+          ]
+        }
+      ],
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlWDsSYVEIfHCmrvZBkg7ccXiHzRgbAhHe7Qgckefy_X8tuTksZA6XcWxHyo1YSuSbIDxcJ-F6GS-J5XDriAAP3urBpD3MLRf53kSBcF-4-C_NG-I2BEKGDC1NjHvfk5CJU5FIPFHjR03MT=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/R1YzKnicHcTRToMwFADQL7oDrGzGxIdCBwXdghSF7WXJbkrZyiihZW7-pM_-jYnn4fz-dM6N9tnz-o4slDGql7OVE5rBycEt0Fw8NVpAC9ajvCyquq-ZFbvPddby-DJd95FWK8TmxL9LdaQdl6t3hVq290Pz5OZK2z1dNljf-N0EOzGLY8ZumEOyTAXkYcOmE6UFmadoZGTzVrYh0SLCBB4hPmxTyB6i9WvK4mB75tdWh3H-ESZZkfBz6ZNN9fIV-L4P3f8Iwx-Na0U9"
+    },
+    {
+      "position": 3,
+      "title": "VINODA DENTAL HOSPITAL (Best Dental Hospital In Hanamkonda)",
+      "place_id": "ChIJByziBH1PMzoRQN2lBF60u14",
+      "data_id": "0x3a334f7d04e22c07:0x5ebbb45e04a5dd40",
+      "data_cid": "6826247976108023104",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a334f7d04e22c07%3A0x5ebbb45e04a5dd40&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a334f7d04e22c07%3A0x5ebbb45e04a5dd40&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 18.0006247,
+        "longitude": 79.56353039999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJByziBH1PMzoRQN2lBF60u14",
+      "provider_id": "/g/11bbt8qbb5",
+      "rating": 4.9,
+      "reviews": 1100,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic",
+        "Dentist",
+        "Oral and maxillofacial surgeon"
+      ],
+      "address": "Kaloji Marg, opposite Hayagrivachary Ground, Balasamudram, Hanamkonda, Telangana 506001, India",
+      "country": "India",
+      "open_state": "Open 24 hours",
+      "hours": "Open 24 hours",
+      "operating_hours": {
+        "friday": "Open 24 hours",
+        "saturday": "Open 24 hours",
+        "sunday": "Open 24 hours",
+        "monday": "Open 24 hours",
+        "tuesday": "Open 24 hours",
+        "wednesday": "Open 24 hours",
+        "thursday": "Open 24 hours"
+      },
+      "phone": "+91 98854 32424",
+      "website": "https://vinodahospital.com/",
+      "extensions": [
+        {
+          "accessibility": [
+            "Wheelchair accessible entrance",
+            "Wheelchair accessible parking lot",
+            "Wheelchair accessible restroom",
+            "Wheelchair accessible seating"
+          ]
+        }
+      ],
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnR1Uqegvdh2UVcd453L6plxK14No68_0_1l2ulQBE3kFzezNgk78Ju_vNlIcsFHWvJlPInPn0Cn0n9tYfCr4fJXFDvzQM-0KNmRuohohE4e1fpNowxNCMHhLI1jjhD=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/eqH7snicHcTbDoIgAADQLyIhqayth7KcmjJ12eXJB0JYEVjgZf5c39HftHUezvcjrG3MynGkcCdcay5Za9ibamWZshOqnw5vDKAGGGcTFtnxrApUvhjvbmJanugNz9xk3sjhgDDRc6-CFZLTVubbvfsIRjYS_lh4cVt1REbUBOG5i2UWqUxBX0G1tNfaf-M6vgS7bsxTAA_kWbRaaLHHDNUN0f1A_DQUSYTud7Fb9whCCMR_CtQPD3pBwA"
+    },
+    {
+      "position": 4,
+      "title": "Kakatiya Superspeciality Dental Hospital - Best Dental Clinic in Hanamkonda | Advanced Dentist | Invisalign & Laser Dentistry",
+      "place_id": "ChIJXxr7iYJFMzoRlR9FxA1O2So",
+      "data_id": "0x3a33458289fb1a5f:0x2ad94e0dc4451f95",
+      "data_cid": "3087584840573591445",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a33458289fb1a5f%3A0x2ad94e0dc4451f95&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a33458289fb1a5f%3A0x2ad94e0dc4451f95&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 18.003727599999998,
+        "longitude": 79.56937599999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJXxr7iYJFMzoRlR9FxA1O2So",
+      "provider_id": "/g/1hhxsy862",
+      "rating": 4.7,
+      "reviews": 504,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic",
+        "Cosmetic dentist",
+        "Dental implants provider",
+        "Dentist",
+        "Hospital",
+        "Oral and maxillofacial surgeon",
+        "Orthodontist"
+      ],
+      "address": "Vijaya Talkies, Opp:, Bus Stand Road, Beside Vijaya Talkies, Kakaji Nagar Colony, Hanamkonda, Telangana 506011, India",
+      "country": "India",
+      "open_state": "Closed · Opens 10 AM Sat",
+      "hours": "Closed · Opens 10 AM Sat",
+      "operating_hours": {
+        "friday": "10 AM–9 PM",
+        "saturday": "10 AM–9 PM",
+        "sunday": "10 AM–2 PM",
+        "monday": "10 AM–9 PM",
+        "tuesday": "10 AM–9 PM",
+        "wednesday": "10 AM–9 PM",
+        "thursday": "10 AM–9 PM"
+      },
+      "phone": "+91 99491 58015",
+      "website": "https://www.kakatiyadentalhospital.com/",
+      "extensions": [
+        {
+          "accessibility": [
+            "Wheelchair accessible restroom"
+          ]
+        }
+      ],
+      "book_online": "https://www.justdial.com/online-consult/hospital?action=BA&extRdt=1&wkwebview=1&docid=9999PX870.X870.140311192228.H1E1&rwg_token=AE37R_iOoipCb_9hQ9yDBc13TuvKpCi7ee4PDJRtenvpJriPuD1o4BLOqy2QYYPpmBhBJvXuU8-9t5dqSmOF93LX7Waf_ikrYw%3D%3D",
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmsqF6n1KKD49kJ5gb-SQUZbNXXfHJqEyfQjpdst1L93lFVrpICD0R9Rs2OU9HnbDViNl66vf30kDszkigLP_8ZiDSZxA3toXpEC8rjmiIu-Ig_NI5SR4GHtWcRyl7OmXNwd75eAE5Ij_qa=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/CoFuUnicHcTbboIwAADQL6qUISgmPhCLo2pQy1TCCxkVyqW0hdbrT-55f7Nk5-H8_tTGKL2wLF47EyYl4-VNlyOVwpTCTKjsLaY0oBpoK4jI4evS62HtCXu7RVO_27isAMnxlBVxmlbRZghf1bFVV23sne_w9XlUeIUg8Yn-2J_8SBTo3MTc8-6VAzuk313Ddod8njUoyZ6BY2SqwtV8bPsG3wBmeYzdhEw_I3Oh5MVn-z6NH9eZWwahi9t8-F4-bAghqP-nQPwBTH5GnQ"
+    },
+    {
+      "position": 5,
+      "title": "Warangal multi speciality dental hospital",
+      "place_id": "ChIJaers0RhFMzoR1dyo83LPyCI",
+      "data_id": "0x3a334518d1ecea69:0x22c8cf72f3a8dcd5",
+      "data_cid": "2506481285252832469",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a334518d1ecea69%3A0x22c8cf72f3a8dcd5&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a334518d1ecea69%3A0x22c8cf72f3a8dcd5&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 17.9832793,
+        "longitude": 79.5993421
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJaers0RhFMzoR1dyo83LPyCI",
+      "provider_id": "/g/11fxxzpq6l",
+      "rating": 4.8,
+      "reviews": 28,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic"
+      ],
+      "address": "9-2-34, 506002, Jayaprakash Narayan Road, Charbowli, Sherpura, Warangal, Telangana 506002, India",
+      "country": "India",
+      "open_state": "Closed · Opens 10 AM Sat",
+      "hours": "Closed · Opens 10 AM Sat",
+      "operating_hours": {
+        "friday": "10 AM–9 PM",
+        "saturday": "10 AM–9 PM",
+        "sunday": "Closed",
+        "monday": "10 AM–9 PM",
+        "tuesday": "10 AM–9 PM",
+        "wednesday": "10 AM–9 PM",
+        "thursday": "10 AM–9 PM"
+      },
+      "phone": "+91 99853 44532",
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWltY5LiYr_A8q6VcIn8Em3fV9wcuRyparYlI8z8wd5UnPhcZpzHqJJL8R72fDlxJinsge_g3RifQjlBxyP9-F6UFl7QEaBjgePQQiUqR-7fWOeaankvd9nQ_WW-MlZCL3JA540N=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/C9ACnnicHcTbDoIgAADQLyItMrGtB7utnJWw1NmLc4RoEV6g1H6wb-hv2joP5_sptK7V3DBEAUe8qrhgT8VaWknNpB7R6mHwWgGqgDLcHQnOsdCJ5ZdJm7qomUV0L9HmAfPI6eiTDHXWJmKP3qi7WqEMCnqp37vG83xE7Em-Fr1XSsVZyiEpc3wTy34IHLCdhVth4022vHEWYFyGDQF2Hp9Ylsn76-pInMYxOIjLyoeea03N46Ibm6YJiv8UyB-3OkTV"
+    },
+    {
+      "position": 6,
+      "title": "Geetha Dental clinic LASER and Implant center",
+      "place_id": "ChIJibqFKxlFMzoRuVo-eOhW7po",
+      "data_id": "0x3a3345192b85ba89:0x9aee56e8783e5ab9",
+      "data_cid": "11163956082747792057",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a3345192b85ba89%3A0x9aee56e8783e5ab9&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a3345192b85ba89%3A0x9aee56e8783e5ab9&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 17.98412,
+        "longitude": 79.5993211
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJibqFKxlFMzoRuVo-eOhW7po",
+      "provider_id": "/g/11f3_40l69",
+      "rating": 5,
+      "reviews": 143,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic"
+      ],
+      "address": "Jayaprakash Narayan Road, near MAHABOOBIA HIGH SCHOOL, beside BHARATH PETROL PUMP, Yellamma Bazar, Sherpura, Warangal, Telangana 506002, India",
+      "country": "India",
+      "open_state": "Closed · Opens 10 AM Sat",
+      "hours": "Closed · Opens 10 AM Sat",
+      "operating_hours": {
+        "friday": "10 AM–2:30 PM, 5–9 PM",
+        "saturday": "10 AM–2:30 PM, 5–9 PM",
+        "sunday": "10 AM–1 PM",
+        "monday": "10 AM–2:30 PM, 5–9 PM",
+        "tuesday": "10 AM–2:30 PM, 5–9 PM",
+        "wednesday": "10 AM–2:30 PM, 5–9 PM",
+        "thursday": "10 AM–2:30 PM, 5–9 PM"
+      },
+      "phone": "+91 99087 60827",
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmGUYcN_o3HB-LRhZj4E9fYjd5N8rBWkBxpxjrcEpdYxae7YJY84hPJHiw-xYhitFddkaXTk9t0nCpJfDAWHdv0hXYosiXlLUde4m_IMen6L4WA0r9vQRfSA5wQqLG46jL664F8cwu5Yxo=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/N-ywHnicHcTbboIwAADQL6p0sSCY7AHmBUlnlEmgvhjTFsqtrbRKv3Lv-xuTnYfz9yus1WbteYNYLhqlmoE_DZ-okpZLu6Bq9BptADXAeHGany7luC8IPd7UMk0AzsW1Q9uoJh3zj-GUlH3itOsmutWMuDtfkYyESJyytJ2BI6K1O8b6e3XpIwvll87qTVym7AVFRZRpqwEXjKPxdvjmMsCojOEUvc55_RP78_mB9yjocBCgXUjnp0-c-pw_IIRA_E-BfAN2cUcM"
+    },
+    {
+      "position": 7,
+      "title": "Vijaya Dental Hospital - Best Hospital Hanamkonda | Dental Clinc | Warangal | Kazipet",
+      "place_id": "ChIJ8923M4JFMzoRVd6Qzyy1lT0",
+      "data_id": "0x3a33458233b7ddf3:0x3d95b52ccf90de55",
+      "data_cid": "4437652211909058133",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a33458233b7ddf3%3A0x3d95b52ccf90de55&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a33458233b7ddf3%3A0x3d95b52ccf90de55&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 18.005256199999998,
+        "longitude": 79.5671366
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJ8923M4JFMzoRVd6Qzyy1lT0",
+      "provider_id": "/g/11c5_222cj",
+      "rating": 4.7,
+      "reviews": 80,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic"
+      ],
+      "address": "6-2-7/1, New Bus Stand Rd, opp. kdc grounds, beside hotel shreya, Kakaji Colony, Brahmanawada, Hanamkonda, Telangana 506011, India",
+      "country": "India",
+      "open_state": "Closed · Opens 10:30 AM Sat",
+      "hours": "Closed · Opens 10:30 AM Sat",
+      "operating_hours": {
+        "friday": "10:30 AM–8 PM",
+        "saturday": "10:30 AM–8 PM",
+        "sunday": "Closed",
+        "monday": "10:30 AM–8 PM",
+        "tuesday": "10:30 AM–8 PM",
+        "wednesday": "10:30 AM–8 PM",
+        "thursday": "10:30 AM–8 PM"
+      },
+      "phone": "+91 92470 23344",
+      "website": "http://vijayadentalwarangal.com/",
+      "extensions": [
+        {
+          "accessibility": [
+            "Wheelchair accessible parking lot"
+          ]
+        }
+      ],
+      "book_online": "https://www.justdial.com/online-consult/hospital?action=BA&extRdt=1&wkwebview=1&docid=9999PX870.X870.110119083959.R6Z2&rwg_token=AE37R_j201FhuZBU-YIGmRYgq8XbDSSCUKaKdikQV2W9OkT_zNSB5hHNf7zNyk63fTw8tegTc0bleooo1xWs07GbOvhKsFeX6g%3D%3D",
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkkSSrzmB-xWTzcKCGBmdjoYcVVCsKrZugnJVRF2RmpVgHgaxa8TrerXaQSwR6EEClEqKn00oCGrfr0i_b8dPUSPuKBmupK6tVl5TcMw5Ii_nz9OWy_Q8hqs3yFuq87I7gx2RUmHg=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/FO4AonicHcTbboIwAADQLyp0EhRN9jAIimuMWLBseyGssoLSFnoJlz_0E_Y3S3Yezu-zMabXO9ftGs9hUrKutrpWVApTC-NQyV3Wa0A10O5bgtO8eDyyTC08BFORLxRFh5Df7vKTEhJppL4sE-8E71eY94QlrJqqIFe1-qgu2YjXcRx18YAEhDI6qB8F2_I7uKXXLLUo5LZHa0M6P6en0T-2pVi252IuL0EzaG_e2yHYHDdsWuErT9jr-AIhBM3_FIg_m_JG6w"
+    },
+    {
+      "position": 8,
+      "title": "Dr Bharath Dental care and Implant center",
+      "place_id": "ChIJAbjSZvpFMzoR_310CCajd1U",
+      "data_id": "0x3a3345fa66d2b801:0x5577a32608747dff",
+      "data_cid": "6158570399198379519",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a3345fa66d2b801%3A0x5577a32608747dff&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a3345fa66d2b801%3A0x5577a32608747dff&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 17.9838053,
+        "longitude": 79.59420039999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJAbjSZvpFMzoR_310CCajd1U",
+      "provider_id": "/g/11twqwm1bz",
+      "rating": 5,
+      "reviews": 91,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic"
+      ],
+      "address": "near kakatiya theater, beside apollo pharmacy, Pothana Nagar, Papaiahpet, chaman, Warangal, Telangana 506002, India",
+      "country": "India",
+      "open_state": "Closed · Opens 10 AM Sat",
+      "hours": "Closed · Opens 10 AM Sat",
+      "operating_hours": {
+        "friday": "10 AM–9 PM",
+        "saturday": "10 AM–9 PM",
+        "sunday": "10 AM–9 PM",
+        "monday": "10 AM–9 PM",
+        "tuesday": "10 AM–9 PM",
+        "wednesday": "10 AM–9 PM",
+        "thursday": "10 AM–9 PM"
+      },
+      "phone": "+91 88973 21328",
+      "website": "https://drbharathdentalcare.com/",
+      "extensions": [
+        {
+          "accessibility": [
+            "Wheelchair accessible seating"
+          ]
+        }
+      ],
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkXfpaZiLNCXdqPTdn9ZEpvPea41Lv94cv-rJ0q93xjGR7rmftLLAU1KFMrd11gAgDZWnzrMn6vXL1z65g3DX9u-cvzfiAQK-DdR1oCx97DAfemcH0UACOk4nt505feUbLVz0EFhQ=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/AYdJCHicHcTbDoIgAADQLyJhao22Hph2WVGZy3K-FQJ2EQyImn_YJ_Q3bZ2H8_00znV2HAT3JhxIreWdPy03TCvHlRsw3Qays4BZYAOyyLP98VaK7lRd6CYp60e2rxWupp3P-ClC1OOIeWCW8IHD93Wej0wrHKWkQKvZ2tQISSLT6qh6s1ZDX1LUD2MZpiV-AuZ7cSG7FUjrHOnkjUcpEbxlC1iQZHuLlIthLHhxpoceTmfNbvJCEELQ_GdA_QDAq0Qg"
+    },
+    {
+      "position": 9,
+      "title": "Kavitha Reddy Dental Hospital Hanamkonda Best Dental Clinic in Hanamkonda | Best Dentist in Hanamkonda",
+      "place_id": "ChIJK80XQoJFMzoRXT6b--sGIy8",
+      "data_id": "0x3a3345824217cd2b:0x2f2306ebfb9b3e5d",
+      "data_cid": "3396566154575822429",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a3345824217cd2b%3A0x2f2306ebfb9b3e5d&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a3345824217cd2b%3A0x2f2306ebfb9b3e5d&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 18.0036821,
+        "longitude": 79.5694953
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJK80XQoJFMzoRXT6b--sGIy8",
+      "provider_id": "/g/11clys_hg3",
+      "rating": 4.7,
+      "reviews": 441,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic"
+      ],
+      "address": "opp. Vijaya Theatre, Kakaji Nagar Colony, Hanamkonda, Telangana 506011, India",
+      "country": "India",
+      "open_state": "Closed · Opens 9 AM Sat",
+      "hours": "Closed · Opens 9 AM Sat",
+      "operating_hours": {
+        "friday": "9 AM–9:30 PM",
+        "saturday": "9 AM–9:30 PM",
+        "sunday": "9 AM–9:30 PM",
+        "monday": "9 AM–9:30 PM",
+        "tuesday": "9 AM–9:30 PM",
+        "wednesday": "9 AM–9:30 PM",
+        "thursday": "9 AM–9:30 PM"
+      },
+      "phone": "+91 90009 44131",
+      "website": "https://kavithareddydentalhospital.com/",
+      "extensions": [
+        {
+          "accessibility": [
+            "Wheelchair accessible seating"
+          ]
+        }
+      ],
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn04Psj8ZSeOaR-Pg_Moib1SCAegIeYU6a235T1vKBuKczDYmCQNBIc_dAFlP7czAo1HIWrpZxN-8-vmBLpclnhl5rPiO7jfCV3KGNY10d1T_9J9EI_DbK2NUhOAWbM_iIBEgawAg=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/laMQJXicHcRLjoIwAADQE1Va8TuJi4K_yggdRQluGqi1xZSWUPzEG3qEuY2Jb_H-36rrGvfjeVr5PWmt1OLmRMut6YTpetzWnmwc4A44D693NM0MHFB3nZz2Iil2gEq2tVWJ9iEWkoj8MCr6_jBF9yi4Rfw1z-vwLw4IZ2e81HTMX9iiNcna5vSMwQTc6-C34dooPWxplYyvl_DoR6s4R_CMUjbdTBeEzcuoHx9UgrNyyyoSLGTxwHL2QBBCoL5zYD5gSEOM"
+    },
+    {
+      "position": 10,
+      "title": "Sai Manasa Dental Clinic - Best Dental Clinic Hanamkonda | Warangal | Best Dental Hospital Hanamkonda Warangal",
+      "place_id": "ChIJnUGrUWZFMzoRjgwxUE8tyfI",
+      "data_id": "0x3a33456651ab419d:0xf2c92d4f50310c8e",
+      "data_cid": "17494564046168460430",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a33456651ab419d%3A0xf2c92d4f50310c8e&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a33456651ab419d%3A0xf2c92d4f50310c8e&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 18.0051097,
+        "longitude": 79.5702603
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJnUGrUWZFMzoRjgwxUE8tyfI",
+      "provider_id": "/g/11smfsygnj",
+      "rating": 5,
+      "reviews": 424,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic",
+        "Dental radiology",
+        "Dentist"
+      ],
+      "address": "6-2-250, jaya hospital lane, opp. zubair bookstall, Chowrastha, Kakaji Nagar Colony, Hanamkonda, Telangana 506011, India",
+      "country": "India",
+      "open_state": "Closed · Opens 9 AM Sat",
+      "hours": "Closed · Opens 9 AM Sat",
+      "operating_hours": {
+        "friday": "9 AM–9 PM",
+        "saturday": "9 AM–9 PM",
+        "sunday": "9 AM–9 PM",
+        "monday": "9 AM–9 PM",
+        "tuesday": "9 AM–9 PM",
+        "wednesday": "10 AM–9 PM",
+        "thursday": "9 AM–9 PM"
+      },
+      "phone": "+91 62816 77760",
+      "website": "http://www.saimanasadentalclinic.com/",
+      "extensions": [
+        {
+          "accessibility": [
+            "Wheelchair accessible seating"
+          ]
+        }
+      ],
+      "unsupported_extensions": [
+        {
+          "accessibility": [
+            "Wheelchair accessible restroom"
+          ]
+        }
+      ],
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmSWKvhSBUuwxTTpY1wWX7S96sDm5zPgzsg9SvZD62azBBIYszFlTaStncyT1GOjcdmUm_0mcZuVWYPvJCAHLUV6oFEFN1jcZ6kqR2Ctpt99Mw1GnuUvXzCEF8XfdpC-hd8oV8p=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/b4ZkXXicHcTbboIwAADQL6pQFhFM9gAIupsSW64vhhTWxtHLbIGtP-g37G-WeB7O350Zo_TWcUb2tKJS0nGY9HAjUphBmBWR3KFKA6KBdqLDOccVR9XbzFBcTMsPxqqBS1VvUOjrHV_bnFpNQzS3O9_rbBy_NNpmI-6QEeQXw_3pSnpe8IvLSTuVVZPPr0l0eC9KX2ZpdoRX0vpf32cvMcqE4ccC92Iq5tomaRbUn71KAOsDWQbqeYGu6wL2mADxD8rURW0"
+    },
+    {
+      "position": 11,
+      "title": "RAJ DENTAL CLINIC MULTI-SPECIALITY AND ROOT CANAL CENTER",
+      "place_id": "ChIJw3ZYSABFMzoR78NjSbufleY",
+      "data_id": "0x3a334500485876c3:0xe6959fbb4963c3ef",
+      "data_cid": "16615362026992288751",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a334500485876c3%3A0xe6959fbb4963c3ef&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a334500485876c3%3A0xe6959fbb4963c3ef&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 17.9807575,
+        "longitude": 79.5985532
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJw3ZYSABFMzoR78NjSbufleY",
+      "provider_id": "/g/11vymt6lcq",
+      "rating": 5,
+      "reviews": 48,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic"
+      ],
+      "address": "First Floor, Jayaprakash Narayan Road, beside V.B.R Diagnostics, opposite SBI, Nandayya Gari Compound, Sherpura, Warangal, Telangana 506002, India",
+      "country": "India",
+      "open_state": "Closed · Opens 10 AM Sat",
+      "hours": "Closed · Opens 10 AM Sat",
+      "operating_hours": {
+        "friday": "10 AM–9 PM",
+        "saturday": "10 AM–9 PM",
+        "sunday": "10 AM–7 PM",
+        "monday": "10 AM–9 PM",
+        "tuesday": "10 AM–9 PM",
+        "wednesday": "10 AM–9 PM",
+        "thursday": "10 AM–9 PM"
+      },
+      "phone": "+91 90307 44707",
+      "website": "https://www.drrajdental.com/",
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmm2EbVmPIczx5ZJpIO-n6tsBsSWJeTmJ8MIOCrUoGFeVh0E1EvohiR-EsNWi8PRT9e9jUX6ely0tgLii-NPXi7Lftblc0arBKnT2TpTGhckCw7r6DSws2NH7L87QbBZOCrOisM=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/fb_FJnicHcxBjoIwFADQE1UqRsBJXAiiwiAgVjHupKm0SlvC74h6wTmDt9G4ecv3-ufGtPBjWQ0fDWqt64b9AeuoVoYpM6BaWnULiAICa7YqclJKaYfVXuYRfd7Hx7iNMqQcAz5sy5gRGXvrKAu6nV4u2J7jcBjeNBcFCiEthZcXZMIml93BYc0DmzoRAqX5QbjJ2VQNxafO_1XEJi1ZcnoNerdz5tse7HTlJp67qfzj584ErKf9EGOM-FeK1BtPaEQ1"
+    },
+    {
+      "position": 12,
+      "title": "Rohini Multi Speciality Dental Clinic",
+      "place_id": "ChIJO6aRxxhFMzoRZh8M6-lq7vQ",
+      "data_id": "0x3a334518c791a63b:0xf4ee6ae9eb0c1f66",
+      "data_cid": "17649161542614916966",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a334518c791a63b%3A0xf4ee6ae9eb0c1f66&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a334518c791a63b%3A0xf4ee6ae9eb0c1f66&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 17.9823097,
+        "longitude": 79.5987609
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJO6aRxxhFMzoRZh8M6-lq7vQ",
+      "provider_id": "/g/1q5bm25qv",
+      "rating": 3.6,
+      "reviews": 55,
+      "unclaimed_listing": true,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic"
+      ],
+      "address": "9-8-86, Jayaprakash Narayan Road, Sherpura, Warangal, Telangana 506002, India",
+      "country": "India",
+      "open_state": "Closed · Opens 10 AM Sat",
+      "hours": "Closed · Opens 10 AM Sat",
+      "operating_hours": {
+        "friday": "10 AM–3 PM, 6–10 PM",
+        "saturday": "10 AM–3 PM, 6–10 PM",
+        "sunday": "Closed",
+        "monday": "10 AM–3 PM, 6–10 PM",
+        "tuesday": "10 AM–3 PM, 6–10 PM",
+        "wednesday": "10 AM–3 PM, 6–10 PM",
+        "thursday": "10 AM–3 PM, 6–10 PM"
+      },
+      "phone": "+91 93816 97748",
+      "thumbnail": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFjkLCPwf-kNq_Xsk8-UdQ5gkA36-2kjTLRjsvm_f2kUhWxOIgsq7ZkhxTqNq--mGvL0LdgqVxZFN9E85BVX-qIRdOol44QEbNwdBaM3SCdBwtrntFsP8PuzS_w71k7CItJtD3elOENAM7_mFeHjkqs7aG61DeFrdLQkqChN95rgdiK344e6ODMBIU7nf9rmWfJZZM=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/5MYoSHicHcTNboIwAADg7LSnqYCggMkOAuJw_Kqo4UIcLe0oUEqrsD3qnmbJvsP3-_JKpBzERlFaoi8wY7hFD4HGivUS9XJRsU7BgwDDyOZvZRtCwyN-Q0M3nWpAY17eBLVADrMVplt9DZa0OYfHRjy7sl7SnFznJMCCmwUl85nHHIBu_wzVEGJ-mQs_tnfWyrncAA-OMGGtYWS7z3iCzj3STy50Jjn20heplT5-TuVkatR0A3mQno7aZBdvI7PsfPTeUC7M-36tecgfYZhR7pLYXo0Yfn3ohoHWiRc5QW72tT121_pQFNHbpKmqCsj_Fej_ADK8WUE"
+    },
+    {
+      "position": 13,
+      "title": "Usha Sree Dental",
+      "place_id": "ChIJb2HRrY5FMzoRrDNl-nNBnfA",
+      "data_id": "0x3a33458eadd1616f:0xf09d4173fa6533ac",
+      "data_cid": "17338086106824258476",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a33458eadd1616f%3A0xf09d4173fa6533ac&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a33458eadd1616f%3A0xf09d4173fa6533ac&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 18.004113099999998,
+        "longitude": 79.5703467
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJb2HRrY5FMzoRrDNl-nNBnfA",
+      "provider_id": "/g/11fky7r5k_",
+      "rating": 5,
+      "reviews": 297,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic",
+        "Endodontist"
+      ],
+      "address": "Zubair Book Stall, Joyalukkas Lane, OPP: Vishwas Super Speciality HospitaI, to, Vijaya Theater Road, Hanamkonda, Telangana 506001, India",
+      "country": "India",
+      "open_state": "Closed · Opens 9:30 AM Sat",
+      "hours": "Closed · Opens 9:30 AM Sat",
+      "operating_hours": {
+        "friday": "9:30 AM–9 PM",
+        "saturday": "9:30 AM–9 PM",
+        "sunday": "9:30 AM–9 PM",
+        "monday": "9:30 AM–9 PM",
+        "tuesday": "9:30 AM–9 PM",
+        "wednesday": "9:30 AM–9 PM",
+        "thursday": "9:30 AM–9 PM"
+      },
+      "phone": "+91 92470 47012",
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnRkGXe95kfJh8D0t7_vXUIihKJDEqOUkeHWAf3UcdQGZJafqBrqqNnLBhBVVWcAD2EDsa7vEF3DNUwKiY5cdXWe5eFUSJ38xG8GWU1wOH6E5UQ1QHExOVMuCjV-EqVn9u03F1EBQ=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/0ClNLHicHcRRboIwAADQE1WKDYomfoAtIE4RZ1vcz2JqoYor1hbxijuCt1my9_Hev8q5u5173k2hUdN1zU32Vj5Ep53UbiS6H6-5WyAssF6U7XcHrvdtWslZ0Na5CjF00-9nRVcXtc4xMQVtZcajGlFxLtOv_FSb-GHMVn_EKmaMiwiPCban6ZMkCG_psL4cA3GuuAxkQj9zFL7SMOXUH4psQgJa-mVGXgXb9MsrA8QwPeshSnwSl4vBhxAC9b8A-g99A0Mb"
+    },
+    {
+      "position": 14,
+      "title": "Dr.Mobe's Dental Clinic",
+      "place_id": "ChIJ0y6vxW1FMzoR2Cf2BjPJ0ng",
+      "data_id": "0x3a33456dc5af2ed3:0x78d2c93306f627d8",
+      "data_cid": "8706242250657900504",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a33456dc5af2ed3%3A0x78d2c93306f627d8&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a33456dc5af2ed3%3A0x78d2c93306f627d8&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 18.004066299999998,
+        "longitude": 79.568748
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJ0y6vxW1FMzoR2Cf2BjPJ0ng",
+      "provider_id": "/g/11mktw6dtx",
+      "rating": 5,
+      "reviews": 24,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic"
+      ],
+      "address": "1st floor, opp. 2nd bus depot, Kakaji Colony, Kakaji Nagar Colony, Hanamkonda, Warangal, Telangana 506001, India",
+      "country": "India",
+      "open_state": "Closed · Opens 10 AM Sat",
+      "hours": "Closed · Opens 10 AM Sat",
+      "operating_hours": {
+        "friday": "10 AM–7 PM",
+        "saturday": "10 AM–7 PM",
+        "sunday": "Closed",
+        "monday": "10 AM–7 PM",
+        "tuesday": "10 AM–7 PM",
+        "wednesday": "10 AM–7 PM",
+        "thursday": "10 AM–7 PM"
+      },
+      "phone": "+91 99082 44513",
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWneNoL22a9fPii5jytakSxOclHAg8EoHSbD9oeVXKFfU_KvJtSSlaHZSVQniSVjDIyLawBVZXNG0sN_c2wc6s7jD8Rbj-u4JLxhJ1IIt-CWIxZQjUgv1Ann-7ckqq18IUZ01TdPVLGYTaPc=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/qCbvxXicHcRNcoIwGADQE0US-iN2pgtaWgkyFA1Ey8aJX2Mg0kSbKHhK171NZ_oW7_fWen90T0HQt3cTZa3q5dnJH7DGS-MnYL8DdXQIHHJBnK7Kam1kYfMwFLN92XUP-urFgY0f0Kexit5synbJzEq-Wbzv6-3iknnGepE2jC9Nx7hO6DUXwwtvNsUcu2IL4QCPbqqTaLXT6Hyf5WObEUo9el3TsVnqWl1IbAyawuF0IhGtG0yqr5Ln889KlPA8EIwxav8HZP4Ax4FHIA"
+    },
+    {
+      "position": 15,
+      "title": "Aishwarya Dental Clinic | Dental Implants, Root Canal, Clear Aligners & Kids Dentist | Hanamkonda",
+      "place_id": "ChIJh6WgjoJFMzoRN7GR12_9AjM",
+      "data_id": "0x3a3345828ea0a587:0x3302fd6fd791b137",
+      "data_cid": "3675778902687592759",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a3345828ea0a587%3A0x3302fd6fd791b137&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a3345828ea0a587%3A0x3302fd6fd791b137&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 18.003794,
+        "longitude": 79.5692814
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJh6WgjoJFMzoRN7GR12_9AjM",
+      "provider_id": "/g/11gff6mz25",
+      "rating": 4.8,
+      "reviews": 97,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic",
+        "Cosmetic dentist",
+        "Dental implants periodontist",
+        "Dentist",
+        "Oral surgeon",
+        "Orthodontist",
+        "Pediatric dentist"
+      ],
+      "address": "Vijaya Theater Road, Kakaji Colony, Kakaji Nagar Colony, Hanamkonda, Telangana 506011, India",
+      "country": "India",
+      "open_state": "Closed · Opens 9 AM Sat",
+      "hours": "Closed · Opens 9 AM Sat",
+      "operating_hours": {
+        "friday": "9 AM–9 PM",
+        "saturday": "9 AM–9 PM",
+        "sunday": "9 AM–9 PM",
+        "monday": "9 AM–9 PM",
+        "tuesday": "9 AM–9 PM",
+        "wednesday": "9 AM–9 PM",
+        "thursday": "9 AM–9 PM"
+      },
+      "phone": "+91 98497 94593",
+      "website": "https://www.aishwaryadental.com/",
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk3Rpiv7upygOiA8-8ejoddJzWE6suuisY7CWaojxo2DYSHtJA9IlBJtTtp3KH4xaroyXfPZiMkeRWbBp6sRpfjtjna4u-Rzg5f4JG2RbTAK6zeUzMYsJ1H4K6Y-n7lRtnqQ8ui=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/SHujSnicHcRbjoIwFADQFVVQENBkPnDGiCVG7WAY5g-xlCK21Xvrgw26Bndj4vk4r2eDaGDqOF3jDYTWouMW-KXSCrnCQaVPjjBAKiDgxAnbZPnRY0ZeQ2seYi3jiES81YcD7fN5ANZKKMLvvNTtXY9-it8EaTxZdjOKGRovTfx7edGPv3rzL1dHzvL9zATATN1iq0rfEtaLce3TxYjtszgNer7rVwXQYeKnQUFU2DFU521k5ddt6LouaT5XRL0B8yJF4w"
+    },
+    {
+      "position": 16,
+      "title": "SREERAKSHA DENTAL CLINIC",
+      "place_id": "ChIJIxFIq19FMzoRVtmxQkl8A4A",
+      "data_id": "0x3a33455fab481123:0x80037c4942b1d956",
+      "data_cid": "9224353115878316374",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a33455fab481123%3A0x80037c4942b1d956&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a33455fab481123%3A0x80037c4942b1d956&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 18.0052245,
+        "longitude": 79.5689981
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJIxFIq19FMzoRVtmxQkl8A4A",
+      "provider_id": "/g/11h6xq0195",
+      "rating": 4.9,
+      "reviews": 396,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic"
+      ],
+      "address": "Deepak Towers, Beside Veena Medicare Gomathi Hospital Line, 1st Line, Kakaji Colony, Hanamkonda, Telangana 506011, India",
+      "country": "India",
+      "open_state": "Open 24 hours",
+      "hours": "Open 24 hours",
+      "operating_hours": {
+        "friday": "Open 24 hours",
+        "saturday": "Open 24 hours",
+        "sunday": "Open 24 hours",
+        "monday": "Open 24 hours",
+        "tuesday": "Open 24 hours",
+        "wednesday": "Open 24 hours",
+        "thursday": "Open 24 hours"
+      },
+      "phone": "+91 99489 88007",
+      "extensions": [
+        {
+          "accessibility": [
+            "Wheelchair accessible parking lot"
+          ]
+        }
+      ],
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmD0tho57aqW5YMpfbuCZUJvat2Fscedx1_YaL2IXl3pfmS8dwpZRMzBibKeC9FmJoNqD0gBped4EikkaKIsyHktswHflf1blp_uDtzlCof5y5FmfBFbKs-7Ahtw3fYsTiM9EQn=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/2NSz_HicHcTRboIwFADQL6oUGXGa-CAgQRGzqYvDFwOlpYSWVu9lqD-4b_BvTDwP5_kvES3MHEdJb1QbUyveA78y0yHvcMSMdmoLhAEBZ5Hsvg5HHVGUxp8Ul6OfZ1aUfXj6Wf8VOI6B8ermnvNiM179Ks8Kvf-sBnvaZY-gKVMeTmO9NttLROvA8upj2bRtka7gnrQIQyKUcEtlz32EDxUa4d_9WIsgLlMgk4XEwRM5HJpsuvzu5oNLKSXyPSPdC--6RnQ"
+    },
+    {
+      "position": 17,
+      "title": "HITHA DENTAL AND MAXILLOFACIAL CLINIC",
+      "place_id": "ChIJ5dL5IjlFMzoRPBTjwyo6yrg",
+      "data_id": "0x3a33453922f9d2e5:0xb8ca3a2ac3e3143c",
+      "data_cid": "13315519203623769148",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a33453922f9d2e5%3A0xb8ca3a2ac3e3143c&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a33453922f9d2e5%3A0xb8ca3a2ac3e3143c&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 17.9811157,
+        "longitude": 79.5985415
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJ5dL5IjlFMzoRPBTjwyo6yrg",
+      "provider_id": "/g/11j124d42c",
+      "rating": 4.8,
+      "reviews": 42,
+      "type": "Hospital",
+      "types": [
+        "Hospital"
+      ],
+      "address": "Jayaprakash Narayan Road, above city union bank, Nandayya Gari Compound, Sherpura, Warangal, Telangana 506002, India",
+      "country": "India",
+      "open_state": "Closed · Opens 10 AM Sat",
+      "hours": "Closed · Opens 10 AM Sat",
+      "operating_hours": {
+        "friday": "10 AM–8:30 PM",
+        "saturday": "10 AM–8:30 PM",
+        "sunday": "Closed",
+        "monday": "10 AM–8:30 PM",
+        "tuesday": "10 AM–8:30 PM",
+        "wednesday": "10 AM–8:30 PM",
+        "thursday": "10 AM–8:30 PM"
+      },
+      "phone": "+91 93980 05947",
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkdvNPsZIgViBdvj2oMxoTnK5_ufdDxDEZZklLXTJwAtYITRe7khKtWHDMR954Ni7FofkCZH-ZkisbroXxUf24I45O3BPLGFHJniix0E_fwnANyg4L8cmb_8E2dR_5537E5GoR-3Q=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/ELyFbXicHcRBjoIwFADQE1UYoEFNXOCAgiJig6PTDYkFSi32G1sFj-gRvI2Jb_Her9aYq55aVte6Iw7Au_qu6xsDZWplRgwuFr9qxDTSVhCTvDjI6pHlmib8T8yrx9mBzQCFWuPy3lThEEaUyi49Fqs-MP9JQWpftmtziMMNmWAvE_4CGvlLY0Sl0KcbHId943iJh7fuPE-Xi3ilhBjsqGx6FWRP7qVjdjmV48ipSImx60d4CQS5u1n_Y9s2ar8zpD4jmkR2"
+    },
+    {
+      "position": 18,
+      "title": "Vinayaka Dental - Best Dental Clinic in Hanamkonda, Warangal - Root Canals, Aligners, Implants, Crowns, Braces and Trauma",
+      "place_id": "ChIJ0R6aEJ1FMzoRSDdFlOeDMbA",
+      "data_id": "0x3a33459d109a1ed1:0xb03183e794453748",
+      "data_cid": "12696073855182387016",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a33459d109a1ed1%3A0xb03183e794453748&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a33459d109a1ed1%3A0xb03183e794453748&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 18.0020834,
+        "longitude": 79.5686393
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJ0R6aEJ1FMzoRSDdFlOeDMbA",
+      "provider_id": "/g/11bw3y9swp",
+      "rating": 4.8,
+      "reviews": 99,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic",
+        "Cosmetic dentist",
+        "Dental implants periodontist",
+        "Dentist",
+        "Emergency dental service",
+        "Orthodontist",
+        "Periodontist",
+        "Prosthodontist",
+        "Teeth whitening service"
+      ],
+      "address": "Hno 7-1-286, New Bus Stand Rd, opp. Masid, Laxmipuram, Kakaji Nagar Colony, Hanamkonda, Telangana 506011, India",
+      "country": "India",
+      "open_state": "Closed · Opens 10:30 AM Sat",
+      "hours": "Closed · Opens 10:30 AM Sat",
+      "operating_hours": {
+        "friday": "10:30 AM–7:30 PM",
+        "saturday": "10:30 AM–7:30 PM",
+        "sunday": "10:30 AM–7:30 PM",
+        "monday": "10:30 AM–7:30 PM",
+        "tuesday": "10:30 AM–7:30 PM",
+        "wednesday": "10:30 AM–7:30 PM",
+        "thursday": "10:30 AM–7:30 PM"
+      },
+      "phone": "+91 95336 66065",
+      "website": "https://vinayakadental.in/",
+      "unsupported_extensions": [
+        {
+          "accessibility": [
+            "Wheelchair accessible entrance"
+          ]
+        }
+      ],
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWluTRyhBsX9ZskaNjC9jSJhLkFuCQ_a-3aPJixHf64rt6DTtjb4uoC7VuIWLC0SWrJwDlfx0E9DxJg0de9Zq7WRH3-VhtqzXSxl0114rvg--8jlvjKMWyAnBVnlmq9y6ZDxX3y-=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/kqn9EXicHcRRboIwGADgE_1SAoHVZA8KGsaccUAo4cUgw3a1tkJbLbvgzuBtlux7-J6_zJibXnqeYMGCKkXFYPUw9UqaQZpFr64evWnoNWhvlRWHighbFTNb6wa3-tLteYJ5mbPdZWuTz2MHQXfIv112jsLJRGll-Cm0Kolr-0Z2CSrJlD9ScXZog1OXU_Q14HaMSZEFUDMz_jSlE8j3w-lOAV64uPP3DzKv5LqW4jriOWpT1wQzvD58hBCw_3uQf3qkRLo"
+    },
+    {
+      "position": 19,
+      "title": "GLS DENTAL LASER & IMPLANT CENTRE",
+      "place_id": "ChIJeXzy9YJFMzoRJZm6Vzx6Dkw",
+      "data_id": "0x3a334582f5f27c79:0x4c0e7a3c57ba9925",
+      "data_cid": "5480452196144945445",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a334582f5f27c79%3A0x4c0e7a3c57ba9925&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a334582f5f27c79%3A0x4c0e7a3c57ba9925&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 18.0044234,
+        "longitude": 79.56888909999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJeXzy9YJFMzoRJZm6Vzx6Dkw",
+      "provider_id": "/g/11bx4316cj",
+      "rating": 4.1,
+      "reviews": 25,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic"
+      ],
+      "address": "H.no: 6, 2-65, Vijaya Theater Road, opposite Second Bus Depot, Kakaji Colony, Kakaji Nagar Colony, Hanamkonda, Telangana 506011, India",
+      "country": "India",
+      "open_state": "Open 24 hours",
+      "hours": "Open 24 hours",
+      "operating_hours": {
+        "friday": "Open 24 hours",
+        "saturday": "Open 24 hours",
+        "sunday": "Open 24 hours",
+        "monday": "Open 24 hours",
+        "tuesday": "Open 24 hours",
+        "wednesday": "Open 24 hours",
+        "thursday": "Open 24 hours"
+      },
+      "phone": "+91 95506 86566",
+      "website": "https://www.practo.com/warangal/clinic/gls-dental-laser-implant-centre-hanamkonda",
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnZitzNiU0DLo00JEOoi5mLIxmYUyyWf3izp5skO1nKch6aKJxv9Dzp_5Trt2mj2fVrdm8-Vvy-6dTd8z9rTDccami3gnuHKhF9PFTN8OpiUOmBWm2mr8K2uYXLCFNJaHoMIQQ=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/Cx_XvXicHcRRboIwGADgE1UqBAMmPswhQWCgS5HpiyEFaZ1_27TFCQf0DruNid_D9_9k1iqzdJwb82a9lP2tG0ynqRS2E3ZGJTi9MogaZJyP5HtHanHidip4haNcYpxuSsl9yLcPOFbjWF88Pinf_JZzkVG2aLL0cQ-jSZ19oq0LV_dy0C0E6HAf0aIlbTCFmkSUNsC9XgxJxuJwF5MiKBWvSljX4IIOMnc4_uSfcZE2ifza7vervznGGLH3FIkXdyNE1A"
+    },
+    {
+      "position": 20,
+      "title": "Krithika Dental Care",
+      "place_id": "ChIJK3YAHuxFMzoR2Toko5SZIq8",
+      "data_id": "0x3a3345ec1e00762b:0xaf229994a3243ad9",
+      "data_cid": "12619817969516821209",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x3a3345ec1e00762b%3A0xaf229994a3243ad9&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x3a3345ec1e00762b%3A0xaf229994a3243ad9&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 17.965944999999998,
+        "longitude": 79.59942629999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJK3YAHuxFMzoR2Toko5SZIq8",
+      "provider_id": "/g/11ty7c75r5",
+      "rating": 5,
+      "reviews": 39,
+      "type": "Dental clinic",
+      "types": [
+        "Dental clinic"
+      ],
+      "address": "1st Floor, H.No 16-4, 411/1, Khammam - Warangal Hwy, beside Wallmart, Ekashila Nagar, Warangal, Telangana 506002, India",
+      "country": "India",
+      "open_state": "Closed · Opens 10 AM Sat",
+      "hours": "Closed · Opens 10 AM Sat",
+      "operating_hours": {
+        "friday": "10 AM–9 PM",
+        "saturday": "10 AM–9 PM",
+        "sunday": "10 AM–2 PM",
+        "monday": "10 AM–9 PM",
+        "tuesday": "10 AM–9 PM",
+        "wednesday": "10 AM–9 PM",
+        "thursday": "10 AM–9 PM"
+      },
+      "phone": "+91 99088 80915",
+      "website": "http://www.krithikadentalcare.com/",
+      "extensions": [
+        {
+          "accessibility": [
+            "Wheelchair accessible seating"
+          ]
+        }
+      ],
+      "book_online": "https://www.justdial.com/online-consult/hospital?action=BA&extRdt=1&wkwebview=1&docid=9999PX870.X870.230619180924.M8A4&rwg_token=AE37R_jRTHY7qN85o9xqIRfGmHe-Wipt7CwBzY6k0tQHCSTQB9_OkQeu-OqOCEmblmP5YIPWlEQLjjk0KSY02qj0SKAId15n8w%3D%3D",
+      "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkNufOYqT9pOFsLfiWI9Xfi6eXCM5_HSFBeJwqm-u5glqWEG7XDO-4uFQpDTPF74ycRJ7V3KnxS-LSkHeU25lp2kpYThC1kip_DB7pZbkXiWI50CI-W29kvxt_sHZBjG2l-vid1AA=w1000-h1000-c-n",
+      "serpapi_thumbnail": "https://serpapi.com/images/url/Yo7pYXicHcxJDoIwFADQE30ZBAkmLhhEHFFAQTYk1jLYCsUWhyN6BG-jcfOW7_OuhGB8LEm0Gg7Kti0p7jm-obYRuBED1F6lknFAHLhk-eE2TsimL4JjF5ss8PiqqJO5mRb1CKfOWs_9yLPx4tFdoddL2iXTmZG6AWi9t2NuvPUM7YXChXEYLptnBKuI-Hiv6pSphB3jylFIzXLXNlh2Iulv1mVnDolqkvtT5NzP7MtMpXCvz4plTR6KLMtQ_UXQfAGZTEP6"
+    }
+  ],
+  "serpapi_pagination": {
+    "next": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&q=dental+clinic+in+Warangal&start=20&type=search"
+  }
+}

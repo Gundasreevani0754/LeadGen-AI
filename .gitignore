@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Secrets / local config
+.env
+
+# SQLite databases (Flask auto-creates on first run)
+*.db
+*.sqlite
+*.sqlite3
+instance/
+
+# Generated lead exports contain real contact details — local only.
+legacy/exports/
+/leadgen_*.xlsx
+~$*.xlsx
+
+# Generated one-pagers and scratch scripts
+/*.pdf
+/tmp-*.mts
+/tmp-*.ts
+
+# AI assistant / agent tooling (local only)
+.claude/
+CLAUDE.md
+AGENTS.md
+.cursor/
+docs/specs/
+docs/plans/
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Screenshots (your personal local files)
+Screenshot*.png
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# Local env (all variants)
+.env.local
+.env.*.local

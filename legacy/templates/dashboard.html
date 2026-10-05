@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Dashboard — LeadGen AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col">
+    <nav class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="{{ url_for('dashboard') }}" class="text-xl font-bold tracking-tight">
+                Lead<span class="text-indigo-500">Gen</span> AI
+            </a>
+            <div class="flex items-center gap-3 text-sm">
+                <a href="{{ url_for('history') }}"
+                    class="px-3 py-1.5 border border-slate-700 hover:border-indigo-500 text-slate-300 hover:text-white rounded-md transition">
+                    History
+                </a>
+                <span class="text-slate-400 hidden sm:inline">Signed in as <span class="text-slate-200 font-medium">{{ user.name }}</span></span>
+                <a href="{{ url_for('logout') }}"
+                    class="px-3 py-1.5 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white rounded-md transition">
+                    Sign out
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-1 max-w-3xl w-full mx-auto px-6 py-12">
+        <header class="mb-10">
+            <h2 class="text-3xl font-bold tracking-tight">Generate {{ lead_count }} grounded leads</h2>
+            <p class="text-slate-400 mt-2">Real companies, sourced with Google Search grounding via Gemini 2.5 Flash. Output ships as an Excel-ready sheet with status tracking.</p>
+        </header>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="mb-6 px-4 py-3 rounded-md text-sm border
+                        {% if category == 'error' %}bg-red-950/50 border-red-900 text-red-200
+                        {% else %}bg-emerald-950/50 border-emerald-900 text-emerald-200{% endif %}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-8 shadow-xl">
+            <form method="POST" action="{{ url_for('generate') }}" class="space-y-6" id="lead-form">
+                <div>
+                    <label for="offering" class="block text-sm font-medium text-slate-300 mb-2">
+                        What does your company offer?
+                    </label>
+                    <input type="text" id="offering" name="offering" required
+                        class="w-full px-4 py-2.5 bg-slate-950 border border-slate-700 rounded-md text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition"
+                        placeholder="e.g. Cloud-based payroll software for SMBs">
+                </div>
+
+                <div>
+                    <label for="target_client" class="block text-sm font-medium text-slate-300 mb-2">
+                        Who is your target client?
+                    </label>
+                    <input type="text" id="target_client" name="target_client" required
+                        class="w-full px-4 py-2.5 bg-slate-950 border border-slate-700 rounded-md text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition"
+                        placeholder="e.g. HR managers at companies with 50-500 employees">
+                </div>
+
+                <div>
+                    <label for="region" class="block text-sm font-medium text-slate-300 mb-2">
+                        Which region or city are you targeting?
+                    </label>
+                    <input type="text" id="region" name="region" required
+                        class="w-full px-4 py-2.5 bg-slate-950 border border-slate-700 rounded-md text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition"
+                        placeholder="e.g. Bangalore, India">
+                </div>
+
+                <button type="submit" id="submit-btn"
+                    class="w-full bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 text-white font-medium py-3 rounded-md transition shadow-lg shadow-indigo-900/30 disabled:opacity-60 disabled:cursor-not-allowed inline-flex items-center justify-center gap-2">
+                    <svg id="spinner" class="hidden animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                    </svg>
+                    <span id="btn-text">Generate {{ lead_count }} Leads</span>
+                </button>
+
+                <p id="status-msg" class="hidden text-center text-xs text-slate-400">
+                    Grounding results via Google Search. This typically takes <span class="text-slate-200 font-medium">10–30 seconds</span> for {{ lead_count }} leads.
+                </p>
+            </form>
+        </div>
+
+        <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-lg p-4">
+                <div class="text-2xl font-bold text-indigo-400">{{ lead_count }}</div>
+                <div class="text-xs text-slate-400 mt-1">Leads per batch</div>
+            </div>
+            <div class="bg-slate-900/50 border border-slate-800 rounded-lg p-4">
+                <div class="text-2xl font-bold text-indigo-400">Real</div>
+                <div class="text-xs text-slate-400 mt-1">Search-grounded</div>
+            </div>
+            <div class="bg-slate-900/50 border border-slate-800 rounded-lg p-4">
+                <div class="text-2xl font-bold text-indigo-400">LinkedIn</div>
+                <div class="text-xs text-slate-400 mt-1">URLs + sizing</div>
+            </div>
+            <div class="bg-slate-900/50 border border-slate-800 rounded-lg p-4">
+                <div class="text-2xl font-bold text-indigo-400">Excel</div>
+                <div class="text-xs text-slate-400 mt-1">+ Status column</div>
+            </div>
+        </div>
+
+        {% if recent_searches %}
+            <section class="mt-12">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-semibold">Recent searches</h3>
+                    <a href="{{ url_for('history') }}" class="text-sm text-indigo-400 hover:text-indigo-300">View all →</a>
+                </div>
+                <ul class="space-y-2">
+                    {% for s in recent_searches %}
+                        <li class="bg-slate-900/50 border border-slate-800 rounded-lg px-4 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                            <div class="min-w-0">
+                                <div class="text-sm text-slate-200 font-medium truncate">{{ s.offering }}</div>
+                                <div class="text-xs text-slate-500 truncate">→ {{ s.target_client }} · {{ s.region }}</div>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs text-slate-400">
+                                <span>{{ s.lead_count }} leads</span>
+                                <span>·</span>
+                                <span>{{ s.created_at.strftime('%b %d, %H:%M') }}</span>
+                                <a href="{{ url_for('results', search_id=s.id) }}" class="text-indigo-400 hover:text-indigo-300 font-medium">View</a>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        {% endif %}
+    </main>
+
+    <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-600">
+        © LeadGen AI — Grounded with Gemini 2.5 Flash + Google Search
+    </footer>
+
+    <script>
+        const form = document.getElementById('lead-form');
+        const btn = document.getElementById('submit-btn');
+        const spinner = document.getElementById('spinner');
+        const btnText = document.getElementById('btn-text');
+        const statusMsg = document.getElementById('status-msg');
+
+        form.addEventListener('submit', () => {
+            btn.disabled = true;
+            spinner.classList.remove('hidden');
+            statusMsg.classList.remove('hidden');
+            btnText.textContent = 'Researching companies…';
+        });
+    </script>
+</body>
+</html>

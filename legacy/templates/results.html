@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Results — LeadGen AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col">
+    <nav class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-10">
+        <div class="max-w-[1400px] mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="{{ url_for('dashboard') }}" class="text-xl font-bold tracking-tight">
+                Lead<span class="text-indigo-500">Gen</span> AI
+            </a>
+            <div class="flex items-center gap-3 text-sm">
+                <a href="{{ url_for('dashboard') }}"
+                    class="px-3 py-1.5 border border-slate-700 hover:border-indigo-500 text-slate-300 hover:text-white rounded-md transition">
+                    New search
+                </a>
+                <a href="{{ url_for('history') }}"
+                    class="px-3 py-1.5 border border-slate-700 hover:border-indigo-500 text-slate-300 hover:text-white rounded-md transition">
+                    History
+                </a>
+                <a href="{{ url_for('logout') }}"
+                    class="px-3 py-1.5 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white rounded-md transition">
+                    Sign out
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-1 max-w-[1400px] w-full mx-auto px-6 py-10">
+        <header class="mb-8 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
+            <div>
+                <h2 class="text-3xl font-bold tracking-tight">{{ leads|length }} leads generated</h2>
+                <p class="text-slate-400 mt-2 max-w-3xl">
+                    <span class="text-slate-200">{{ search.offering }}</span>
+                    · targeting <span class="text-slate-200">{{ search.target_client }}</span>
+                    · in <span class="text-slate-200">{{ search.region }}</span>
+                </p>
+                <p class="text-slate-500 text-xs mt-2">
+                    Generated {{ search.created_at.strftime('%b %d, %Y at %H:%M') }} UTC · ID #{{ search.id }}
+                </p>
+            </div>
+            <a href="{{ url_for('download', search_id=search.id) }}"
+                class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 text-white font-medium px-5 py-2.5 rounded-md transition shadow-lg shadow-indigo-900/30 whitespace-nowrap">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+                Download Excel
+            </a>
+        </header>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="mb-6 px-4 py-3 rounded-md text-sm border
+                        {% if category == 'error' %}bg-red-950/50 border-red-900 text-red-200
+                        {% else %}bg-emerald-950/50 border-emerald-900 text-emerald-200{% endif %}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <div class="bg-amber-950/30 border border-amber-900/60 text-amber-200 text-xs px-4 py-3 rounded-md mb-6">
+            <span class="font-semibold">Verification note:</span>
+            Company names, LinkedIn URLs, locations, and size bands are grounded in real Google Search results.
+            Contact names and emails are inferred from common business patterns — validate with your email verifier before outreach.
+            The <span class="font-semibold">Status</span> column in the Excel export is intentionally empty for you to fill in (Contacted / Replied / etc.).
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-xl">
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-slate-800 text-sm">
+                    <thead class="bg-slate-900/80 sticky top-0">
+                        <tr>
+                            <th class="px-3 py-3 text-left font-semibold text-slate-300 uppercase tracking-wider text-xs">#</th>
+                            <th class="px-3 py-3 text-left font-semibold text-slate-300 uppercase tracking-wider text-xs">Company</th>
+                            <th class="px-3 py-3 text-left font-semibold text-slate-300 uppercase tracking-wider text-xs">Contact</th>
+                            <th class="px-3 py-3 text-left font-semibold text-slate-300 uppercase tracking-wider text-xs">Designation</th>
+                            <th class="px-3 py-3 text-left font-semibold text-slate-300 uppercase tracking-wider text-xs">Email</th>
+                            <th class="px-3 py-3 text-left font-semibold text-slate-300 uppercase tracking-wider text-xs">LinkedIn</th>
+                            <th class="px-3 py-3 text-left font-semibold text-slate-300 uppercase tracking-wider text-xs">Location</th>
+                            <th class="px-3 py-3 text-left font-semibold text-slate-300 uppercase tracking-wider text-xs">Size</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800">
+                        {% for lead in leads %}
+                            <tr class="hover:bg-slate-800/30 transition">
+                                <td class="px-3 py-3 text-slate-500">{{ lead.serial_number }}</td>
+                                <td class="px-3 py-3 text-slate-100 font-medium">
+                                    {% if lead.company_linkedin_url %}
+                                        <a href="{{ lead.company_linkedin_url }}" target="_blank" rel="noopener" class="hover:text-indigo-300">
+                                            {{ lead.company_name }}
+                                        </a>
+                                    {% else %}
+                                        {{ lead.company_name }}
+                                    {% endif %}
+                                </td>
+                                <td class="px-3 py-3 text-slate-200">{{ lead.contact_person }}</td>
+                                <td class="px-3 py-3 text-slate-400 text-xs">{{ lead.designation }}</td>
+                                <td class="px-3 py-3">
+                                    {% if lead.contact_email %}
+                                        <a href="mailto:{{ lead.contact_email }}" class="text-indigo-400 hover:text-indigo-300 text-xs">
+                                            {{ lead.contact_email }}
+                                        </a>
+                                    {% endif %}
+                                </td>
+                                <td class="px-3 py-3 text-xs">
+                                    <div class="flex flex-col gap-1">
+                                        {% if lead.contact_linkedin_url %}
+                                            <a href="{{ lead.contact_linkedin_url }}" target="_blank" rel="noopener" class="text-indigo-400 hover:text-indigo-300">Profile ↗</a>
+                                        {% endif %}
+                                        {% if lead.company_linkedin_url %}
+                                            <a href="{{ lead.company_linkedin_url }}" target="_blank" rel="noopener" class="text-slate-400 hover:text-slate-200">Company ↗</a>
+                                        {% endif %}
+                                    </div>
+                                </td>
+                                <td class="px-3 py-3 text-slate-400 text-xs">{{ lead.company_location }}</td>
+                                <td class="px-3 py-3">
+                                    {% if lead.company_size %}
+                                        <span class="inline-block px-2 py-0.5 text-xs bg-indigo-950/60 border border-indigo-900/60 text-indigo-200 rounded">
+                                            {{ lead.company_size }}
+                                        </span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="{{ url_for('download', search_id=search.id) }}"
+                class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-2.5 rounded-md transition shadow-lg shadow-indigo-900/30">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+                Download as Excel (.xlsx)
+            </a>
+            <a href="{{ url_for('dashboard') }}"
+                class="inline-flex items-center justify-center gap-2 border border-slate-700 hover:border-slate-500 text-slate-200 font-medium px-6 py-2.5 rounded-md transition">
+                Generate another batch
+            </a>
+            <a href="{{ url_for('history') }}"
+                class="inline-flex items-center justify-center gap-2 border border-slate-700 hover:border-slate-500 text-slate-200 font-medium px-6 py-2.5 rounded-md transition">
+                View history
+            </a>
+        </div>
+    </main>
+
+    <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-600">
+        © LeadGen AI — Grounded with Gemini 2.5 Flash + Google Search
+    </footer>
+</body>
+</html>
